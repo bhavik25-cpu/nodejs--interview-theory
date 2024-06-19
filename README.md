@@ -1,6 +1,6 @@
 # notes link
-
 https://github.com/Mohamed-Hashem/nodejs-interview-questions
+
 # nodejs--interview-theory
 What is node js and why should we use node js
 
@@ -27,16 +27,10 @@ Here are some key characteristics and reasons why developers choose to use Node.
 •	Node.js is well-suited for building scalable applications. Its event-driven architecture and asynchronous nature make it easy to handle a large number of simultaneous connections, making it ideal for applications with high scalability requirements.
 8.	Versatility:
 •	Node.js is versatile and can be used for a variety of applications, including web servers, APIs, real-time applications (e.g., chat applications, online gaming), and microservices.
-
-
-
-
-
-
-
-
+______________________________________________________________________________________________________________________________________________________________________________
 
 How Node Js work
+
 Node.js is a runtime environment that allows the execution of JavaScript code on the server side. It is built on the V8 JavaScript engine, which is developed by Google and is also used in the Chrome browser. Here's a simplified overview of how Node.js works:
 1.	V8 JavaScript Engine:
 •	At the core of Node.js is the V8 JavaScript engine, which compiles and executes JavaScript code. V8 is known for its high performance and is optimized for running JavaScript quickly.
@@ -65,19 +59,9 @@ Here's a simplified sequence of events in a Node.js application:
 •	Send the response back to the client.
 This event-driven, non-blocking architecture makes Node.js particularly efficient for handling a large number of concurrent connections, making it suitable for real-time applications and scalable server-side development.
 
-
-
-
-
-
-
-
-
-
-
+_____________________________________________________________________________________________________________________________________________________________________________
 
 Node.js Modules 
-
 
 In Node.js, modules are a fundamental concept that allows developers to organize code into reusable and maintainable units. A module in Node.js is a file containing JavaScript code that defines functions, objects, or variables that can be used in other files. Modules help in structuring applications, promoting code reusability, and avoiding naming conflicts.
 
@@ -87,6 +71,7 @@ Creating a Module:
 Exporting from a Module:
 
 To make functions, variables, or objects available outside a module, you use the module.exports or exports object.
+...javasctipt
 // Example module: myModule.js
 // Exporting a function
 exports.myFunction = function() {
@@ -94,7 +79,7 @@ exports.myFunction = function() {
 };
 // Exporting a variable
 exports.myVariable = 'Hello from myVariable!';
-
+javasctipt
 
 
 
