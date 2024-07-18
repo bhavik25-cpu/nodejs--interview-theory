@@ -3674,8 +3674,8 @@ In summary, SSH is primarily used for secure remote access and file transfer, wh
 
 
 
-
-Microservices
+_____________________________________________________________________________________
+**Microservices**
 Microservices is an architectural style that structures an application as a collection of small, independently deployable services, each running in its own process and communicating with lightweight mechanisms, often an HTTP-based application programming interface (API). Each microservice is designed to perform a specific business function and can be developed, deployed, and scaled independently of other services.
 Key characteristics of microservices architecture include:
 1.	Modularity: Microservices are small, focused, and modular, with each service handling a specific business capability.
@@ -3734,8 +3734,8 @@ Microservices can be implemented in Node.js, leveraging its asynchronous, event-
 
 
 
-
-Different between Axios and fetch
+_________________________________________________________________________________________________________________________________
+**Different between Axios and fetch**
 Axios and the fetch API are both popular methods for making HTTP requests in JavaScript applications, but they have some differences in terms of features, ease of use, and browser compatibility:
 1.	Feature Set:
 •	Axios: Axios is a promise-based HTTP client for the browser and Node.js. It offers features like interceptors, request and response transformations, built-in support for handling request and response data as JSON, automatic transformation of response data to JavaScript objects, and more.
