@@ -545,6 +545,8 @@ removeListener(event, listener):
 
 
 This method is used to remove a specific listener for a given event. It requires both the event name and the listener function to be specified.
+```javascript
+
 const listener = (arg1, arg2) => {
     console.log('Event received:', arg1, arg2);
 };
@@ -553,6 +555,10 @@ myEmitter.on('myEvent', listener);
 
 // Remove the listener
 myEmitter.removeListener('myEvent', listener);
+
+```
+
+
 removeAllListeners([event]):
 
 If no event is specified, this method removes all listeners for all events. If an event is specified, it removes all listeners for that specific event.
@@ -562,17 +568,28 @@ myEmitter.removeAllListeners('myEvent');
 // Remove all listeners for all events
 myEmitter.removeAllListeners();
 
+
+
+
 listeners(event):
 
 Returns an array of listeners for a specified event.
+```javascript
+
 const allListeners = myEmitter.listeners('myEvent');
 console.log(allListeners);
+```
 
 eventNames():
 
 Returns an array containing the names of all the events for which listeners have been registered.
+
+```javascript
+
 const allEvents = myEmitter.eventNames();
 console.log(allEvents);
+```
+
 These methods provide a robust way to manage events in Node.js applications. By using the EventEmitter and its methods, you can create modular and extensible code that responds to various events within your application.
 
 
