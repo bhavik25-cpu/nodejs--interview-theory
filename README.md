@@ -3384,8 +3384,8 @@ Promise.any() is a method introduced in ECMAScript 2021 (ES12) for handling mult
 
 Here's a basic usage example:
 
-javascript
-Copy code
+```javascript
+
 const promise1 = new Promise((resolve) => setTimeout(() => resolve('First resolved!'), 1000));
 const promise2 = new Promise((resolve, reject) => setTimeout(() => reject(new Error('Second rejected!')), 500));
 const promise3 = new Promise((resolve) => setTimeout(() => resolve('Third resolved!'), 1500));
@@ -3397,6 +3397,8 @@ Promise.any([promise1, promise2, promise3])
   .catch((error) => {
     console.error('All promises were rejected:', error);
   });
+```
+
 In this example, Promise.any() is used to handle an array of promises (promise1, promise2, and promise3). The then block is executed with the value of the first fulfilled promise, and if all promises are rejected, the catch block is executed with an AggregateError containing the reasons for all rejections.
 
 
@@ -3407,8 +3409,9 @@ In this example, Promise.any() is used to handle an array of promises (promise1,
 
 Promise.race() 
 Promise.race() is a method in JavaScript that takes an array of promises as input and returns a new promise. This new promise settles (either resolves or rejects) as soon as the first promise in the input array settles, whether it's fulfilled or rejected. The resulting promise adopts the state (either resolved or rejected) and the value or reason of the first settling promise.
-
+___________________________________________________________________________________________________________________________________________________
 Here's a basic usage example:
+```javascript
 
 const promise1 = new Promise((resolve) => setTimeout(() => resolve('First resolved!'), 1000));
 const promise2 = new Promise((resolve, reject) => setTimeout(() => reject(new Error('Second rejected!')), 500));
@@ -3421,6 +3424,8 @@ Promise.race([promise1, promise2, promise3])
   .catch((error) => {
     console.error('The first promise to be rejected:', error);
   });
+```
+
 In this example, Promise.race() is used to handle an array of promises (promise1, promise2, and promise3). The then block is executed with the value of the first fulfilled promise, and if the first promise to settle is rejected, the catch block is executed with the reason of the first rejection.
 
 This method is useful when you have multiple asynchronous operations, and you want to proceed as soon as the first one is either successful or encounters an error. It's different from Promise.all(), which waits for all promises to settle, and Promise.any(), which waits for the first promise to fulfill (ignoring rejections until all promises have rejected).
@@ -3430,14 +3435,20 @@ This method is useful when you have multiple asynchronous operations, and you wa
 
 
 
-
-How to change the latest version in package.json
+_________________________________________________________________________________________________________________________________________________________________
+**How to change the latest version in package.json**
+```javascript
 
 "@angular/core": "^14.0.2"
+```
+
 latest version install in package.json file inside use ^
+```javascript
 
 
 npm install express@2.x.x
+```
+
 if spacific version install then using this command
 
 
@@ -3450,19 +3461,21 @@ if spacific version install then using this command
 
 Node version use
 
+```javascript
 
 v19.9.0	-	2023-04-10	v9.6.3
 
 v13.14.0	-	2020-04-29	v6.14.4	ReleasesChangelogDocs
+```
 
 				
 
 
 
 
+________________________________________________________________________________________________________________________________________________________________________
 
-
-Middleware Types
+**Middleware Types**
 
 In the context of web development and frameworks like Express.js (commonly used with Node.js), middleware plays a crucial role in processing incoming HTTP requests. Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. They can modify the request and response objects, end the request-response cycle, or call the next middleware function in the stack.
 
@@ -3472,6 +3485,8 @@ Application-Level Middleware:
 
 These are middleware functions bound to the application using app.use(). They are executed for every incoming request.
 Example:
+```javascript
+
 const express = require('express');
 const app = express();
 
@@ -3479,17 +3494,23 @@ app.use((req, res, next) => {
   // Middleware logic
   next();
 });
+```
+
+
 
 Router-Level Middleware:
 
 Similar to application-level middleware but bound to a specific router using router.use().
 Example:
+```javascript
+
 const express = require('express');
 const router = express.Router();
 router.use((req, res, next) => {
   // Middleware logic for this router
   next();
 });
+```
 
 
 
@@ -3498,37 +3519,47 @@ Error-Handling Middleware:
 Used to handle errors during the request-response cycle.
 Typically defined with four parameters (err, req, res, next).
 Example:
+```javascript
+
 app.use((err, req, res, next) => {
   // Error-handling logic
   res.status(500).send('Something went wrong!');
 });
+
+```
+
 Built-In Middleware:
 
 Express comes with built-in middleware functions that perform common tasks, such as serving static files (express.static()), parsing incoming requests (express.json(), express.urlencoded()), etc.
 Example:
-javascript
-Copy code
+```javascript
+
 app.use(express.static('public'));
+```
+
 Third-Party Middleware:
 
 These are middleware functions created by third-party developers or the community, which can be easily integrated into an Express application.
 Example (using body-parser for parsing request bodies):
-javascript
-Copy code
+```javascript
+
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());
+```
 
 Custom Middleware:
 
 Developers can create their own custom middleware functions to perform specific tasks in the request-response cycle.
 Example:
-javascript
-Copy code
+```javascript
+
 const customMiddleware = (req, res, next) => {
   // Custom middleware logic
   next();
 };
 app.use(customMiddleware);
+```
+
 Remember that the order in which middleware is defined matters, as they are executed in the order they are added to the application or router. The next function is crucial to pass control to the next middleware in the stack. If next is not called within a middleware function, the request-response cycle may hang.
 
 
@@ -3556,8 +3587,8 @@ Remember that the order in which middleware is defined matters, as they are exec
 
 
 
-
-Pros and Cons of Using Node.js
+___________________________________________________________________________________________________________________________________________________
+**Pros and Cons of Using Node.js**
 Pros of Node.js
 High-performance Real-time Applications
 Node.js is capable of building super-fast applications that give results in the blink of an eye. The single-threaded, event-driven architecture processes multiple parallel requests efficiently without jamming the RAM. Its event-loop and non-blocking I/O operations let code execution at a pace that indirectly affects the application’s overall performance. It’s powered by Google Chrome’s V8 engine which is actually coded in C++. 
@@ -3580,9 +3611,9 @@ One of the advantages of Node. js ie. single-threaded and event-driven are the s
 
 
 
+___________________________________________________________________________________________________________________________________________
 
-
-node js all module and what it is
+**node js all module and what it is**
 Node.js provides a rich set of built-in modules that you can use to perform various tasks. Here are some of the core modules in Node.js and a brief description of what they are used for:
 1.	fs (File System):
 •	This module provides methods for interacting with the file system. You can read, write, and manipulate files and directories using functions like fs.readFile, fs.writeFile, and more.
@@ -3621,8 +3652,8 @@ Node.js provides a rich set of built-in modules that you can use to perform vari
 
 
 
-
-ssh and ssl diff
+______________________________________________________________________________________________________________________________________________
+**ssh and ssl diff**
 SSH (Secure Shell) and SSL (Secure Sockets Layer) are both cryptographic protocols designed to secure communication over networks, but they serve different purposes and operate at different layers of the network stack.
 SSH (Secure Shell):
 1.	Purpose:
