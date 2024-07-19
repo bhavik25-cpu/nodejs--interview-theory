@@ -67,13 +67,15 @@ In Node.js, modules are a fundamental concept that allows developers to organize
 
 Node.js follows the CommonJS module system, which defines a simple way to include and export functionality between different files. Here's a brief overview of how Node.js modules work:
 
+
+
 Creating a Module:
 Exporting from a Module:
 
 To make functions, variables, or objects available outside a module, you use the module.exports or exports object.
 // Example module: myModule.js
 // Exporting a function
-...javasctipt
+```javasctipt
 exports.myFunction = function() {
     console.log('Hello from myFunction!');
 };
