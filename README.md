@@ -2731,6 +2731,7 @@ For MySQL, you might use the mysql library with its connection pooling capabilit
 For PostgreSQL, the pg library has built-in support for connection pooling.
 Mongoose, used with MongoDB, also supports connection pooling.
 Here's a simplified example using the mysql library:
+```javascript
 
 const mysql = require('mysql');
 
@@ -2745,6 +2746,7 @@ const pool = mysql.createPool({
 pool.query('SELECT * FROM mytable', (error, results, fields) => {
   // Handle the query results
 });
+```
 
 // The connection is automatically returned to the pool after the query is executed
 By configuring the connection pool with the desired limit, you control the number of concurrent connections, preventing the application from overwhelming the database server.
