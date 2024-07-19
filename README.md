@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/70487bc1-6e34-4ce1-bef5-330a168eaa50)![image](https://github.com/user-attachments/assets/765fd450-c243-4daf-a5cd-de82486f70e6)# notes link
 https://github.com/Mohamed-Hashem/nodejs-interview-questions
 
 # nodejs--interview-theory
