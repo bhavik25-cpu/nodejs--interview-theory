@@ -71,9 +71,9 @@ Creating a Module:
 Exporting from a Module:
 
 To make functions, variables, or objects available outside a module, you use the module.exports or exports object.
-...javasctipt
 // Example module: myModule.js
 // Exporting a function
+...javasctipt
 exports.myFunction = function() {
     console.log('Hello from myFunction!');
 };
