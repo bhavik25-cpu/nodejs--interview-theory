@@ -502,7 +502,9 @@ Node.js events are widely used for building event-driven applications, handling 
 
 
 ____________________________________________________________________________________________________________________________________________________
-Node.js Events method
+**Node.js Events method**
+
+
 In Node.js, the events module provides the EventEmitter class, which allows you to work with events in a flexible and powerful way. The EventEmitter class comes with several methods for working with events. Here are some of the key methods:
 ```javascript
 on(event, listener) or addListener(event, listener):
@@ -650,6 +652,8 @@ These methods, when used together, provide a powerful and flexible mechanism for
 ______________________________________________________________________________________________________________________
 
 **Node.js REPL (READ, EVAL, PRINT, LOOP)**
+
+
 The Node.js REPL (Read-Eval-Print Loop) is an interactive command-line environment that allows you to execute JavaScript code and see the results immediately. It's a tool for testing and experimenting with code snippets, debugging, and exploring Node.js features. The REPL operates on a simple principle: it reads input, evaluates it, prints the result, and then repeats the process.
 
 Here's a brief overview of how to use the Node.js REPL:
