@@ -656,6 +656,9 @@ For multiline input, you can use the ... continuation prompt. Pressing Enter aft
 ...   return a + b;
 ... }
 ```javascript
+
+
+
 Accessing Previously Entered Commands:
 
 You can access previously entered commands using the Up and Down arrow keys.
@@ -675,18 +678,6 @@ Alternatively:
 $ node
 > // Press Ctrl+C twice to exit
 The Node.js REPL is a handy tool for quick testing and prototyping. It allows you to experiment with code without the need for a separate file or a full application. The REPL is also useful for learning and exploring Node.js features in an interactive manner.
-
-
-
-...
-
-
-
-
-
-
-
-
 
 _____________________________________________________________________________________________________________________________
 
