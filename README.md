@@ -919,40 +919,61 @@ These are just a few examples of the functions provided by the path module. Usin
 
 Certainly! Here are a few more functions provided by the path module in Node.js:
 
+
+
 path.relative(from, to):
 
 Returns the relative path from one path to another.
+```javascript
+
 const relativePath = path.relative('/path/to', '/path/to/file.txt');
 console.log(relativePath); // 'file.txt'
 
+
+```
+
 path.isAbsolute(path):
 
-
-
 Determines if a path is an absolute path.
+```javascript
+
 console.log(path.isAbsolute('/path/to/file.txt')); // true
 console.log(path.isAbsolute('path/to/file.txt'));  // false
 
+```
 
 
 
 path.sep:
 
 A constant representing the platform-specific file path separator (/ on Unix-like systems, \ on Windows).
+```javascript
+
 console.log(path.sep); // Output varies by platform
+
+```
+
 path.delimiter:
 
 A constant representing the platform-specific path delimiter used in the PATH environment variable (: on Unix-like systems, ; on Windows).
+```javascript
+
 console.log(path.delimiter); // Output varies by platform
+```
 
 path.win32 and path.posix:
 
 Objects containing methods specific to Windows (win32) and POSIX (posix) systems. The methods provided by these objects are similar to those in the main path module but handle path formatting differently based on the platform.
+
+```javascript
+
 const winPath = path.win32.join('C:', 'Users', 'John');
 console.log(winPath); // 'C:\\Users\\John' (on Windows)
 
 const posixPath = path.posix.join('/home', 'john');
 console.log(posixPath); // '/home/john' (on Unix-like systems)
+```
+
 These additional functions and constants provide more flexibility and control when working with paths in a Node.js application. The path module is an essential part of file and directory manipulation in a platform-independent manner.
 
 
@@ -964,31 +985,52 @@ Certainly! Here are a few more functions and constants from the path module in N
 path.resolve([...paths]):
 
 In addition to resolving an absolute path, path.resolve can be used to concatenate paths in a way that ensures an absolute path is returned.
+
+```javascript
+
 const absolutePath = path.resolve('/path/to', 'file.txt');
 console.log(absolutePath); // '/path/to/file.txt'
+```
+
+
 
 path.toNamespacedPath(path):
 
 Converts a path to a path with a namespace, primarily used on Windows. This method is useful when dealing with paths that include namespaces.
+```javascript
+
 const namespacedPath = path.toNamespacedPath('C:\\Users\\John');
 console.log(namespacedPath); // '\\\\?\\C:\\Users\\John' (on Windows)
+```
+
+
 
 path.relative(from, to):
 
 Returns a relative path from the from path to the to path. Similar to path.relative, but can be used to generate paths that will work on Windows.
+```javascript
+
 const relativePathWindows = path.win32.relative('C:\\Users\\John', 'C:\\Users\\Bob');
 console.log(relativePathWindows); // '..\\Bob' (on Windows)
+
+```
+
 path.win32.basename(path, [ext]) and path.posix.basename(path, [ext]):
 
 Versions of path.basename that operate specifically on Windows (win32) or POSIX systems (posix).
+```javascript
+
 const winBasename = path.win32.basename('C:\\Users\\John\\file.txt');
 console.log(winBasename); // 'file.txt' (on Windows)
 
 const posixBasename = path.posix.basename('/home/john/file.txt');
 console.log(posixBasename); // 'file.txt' (on Unix-like systems)
 
+```
 
 path.win32.sep and path.posix.sep:
+
+
 
 Constants representing the platform-specific file path separator (\\ on Windows) and (/ on Unix-like systems).
 ```javascript
@@ -997,8 +1039,8 @@ console.log(path.posix.sep); // '/' (on Unix-like systems)
 
 ``
 
-
-Node.js process
+___________________________________________________________________________________________________________________________________________________________________________
+**Node.js process**
 The process object in Node.js provides information about, and control over, the current Node.js process. It is a global object, so you can access it from any part of your Node.js application without needing to require it explicitly. The process object has various properties and methods that allow you to interact with the running Node.js process.
 
 Here are some commonly used properties and methods of the process object:
