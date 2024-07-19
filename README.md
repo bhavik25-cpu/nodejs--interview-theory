@@ -969,7 +969,9 @@ Objects containing methods specific to Windows (win32) and POSIX (posix) systems
 
 const winPath = path.win32.join('C:', 'Users', 'John');
 console.log(winPath); // 'C:\\Users\\John' (on Windows)
+```
 
+```javascript
 const posixPath = path.posix.join('/home', 'john');
 console.log(posixPath); // '/home/john' (on Unix-like systems)
 ```
