@@ -66,11 +66,10 @@ This event-driven, non-blocking architecture makes Node.js particularly efficien
 _____________________________________________________________________________________________________________________________________________________________________________
 
 **Node.js Modules**
+
 In Node.js, modules are a fundamental concept that allows developers to organize code into reusable and maintainable units. A module in Node.js is a file containing JavaScript code that defines functions, objects, or variables that can be used in other files. Modules help in structuring applications, promoting code reusability, and avoiding naming conflicts.
 
 Node.js follows the CommonJS module system, which defines a simple way to include and export functionality between different files. Here's a brief overview of how Node.js modules work:
-
-
 
 Creating a Module:
 Exporting from a Module:
