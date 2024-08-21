@@ -6,6 +6,7 @@ ________________________________________________________________________________
 **What is node js and why should we use node js**
 
 Node.js is an open source server environment
+
 •	Node.js is free
 
 •	Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)
