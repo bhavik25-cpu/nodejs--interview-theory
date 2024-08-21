@@ -7,7 +7,9 @@ ________________________________________________________________________________
 
 Node.js is an open source server environment
 •	Node.js is free
+
 •	Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)
+
 •	Node.js uses JavaScript on the server
 
 Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute server-side JavaScript code. It is built on the V8 JavaScript engine, which is the same engine that powers the Google Chrome browser. Node.js enables the execution of JavaScript code outside of a web browser, making it suitable for server-side development.
