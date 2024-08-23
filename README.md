@@ -697,11 +697,13 @@ You can enter JavaScript code directly into the REPL prompt, and it will be exec
 Multiline Input:
 
 For multiline input, you can use the ... continuation prompt. Pressing Enter after the ... prompt will continue the input.
+
 ```javascript
 > function addNumbers(a, b) {
-...   return a + b;
-... }
-```javascript
+  return a + b;
+ }
+
+```
 
 
 
