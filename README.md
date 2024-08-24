@@ -3011,7 +3011,7 @@ Remember to check the documentation of the specific API you are working with for
 
 
 
-_______________________________________________________________________________________________________________________---
+_______________________________________________________________________________________________________________________
 **Cors js**
 
 
@@ -3079,6 +3079,8 @@ Remember that CORS is a security feature, and you should configure it based on y
 
 _________________________________________________________________________________________________________________________________________________________
 **Export , Import and Module. Exports in Node Js explain to me with code example**
+
+
 In Node.js, exports and module.exports are used to define the public interface of a module, allowing other modules to consume its functionality. Let's look at each of these concepts with code examples:
 
 1. exports:
@@ -3400,7 +3402,9 @@ const http = require('http');
 These modules are part of the Node.js standard library and provide fundamental functionality for building various types of applications.
 
 
-______________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________
+
+
 **In Node.js, setImmediate, setTimeout, setInterval, clearInterval, and process.nextTick are functions that are used for scheduling and handling asynchronous operations. Here's a brief explanation of each:**
 
 
@@ -3972,7 +3976,7 @@ In this example, Promise.any() is used to handle an array of promises (promise1,
 Promise.race() 
 
 Promise.race() is a method in JavaScript that takes an array of promises as input and returns a new promise. This new promise settles (either resolves or rejects) as soon as the first promise in the input array settles, whether it's fulfilled or rejected. The resulting promise adopts the state (either resolved or rejected) and the value or reason of the first settling promise.
-___________________________________________________________________________________________________________________________________________________
+
 Here's a basic usage example:
 ```javascript
 
