@@ -117,6 +117,7 @@ In Node.js, modules are a fundamental concept that allows developers to organize
 Node.js follows the CommonJS module system, which defines a simple way to include and export functionality between different files. Here's a brief overview of how Node.js modules work:
 
 Creating a Module:
+
 Exporting from a Module:
 
 To make functions, variables, or objects available outside a module, you use the module.exports or exports object.
@@ -132,6 +133,7 @@ exports.myVariable = 'Hello from myVariable!';
 
 
 Importing a Module:
+
 In another file, you can import the module using the require function.
 // Example usage: app.js
 // Importing the module
@@ -147,6 +149,7 @@ console.log(myModule.myVariable);
 ```
 
 Core Modules:
+
 Node.js provides a set of core modules that can be used without explicitly installing them. These modules cover a wide range of functionalities such as file system operations, HTTP handling, and more. Core modules are imported using the require function without specifying a path.
 Example:
 
@@ -157,6 +160,7 @@ const http = require('http'); // HTTP module
 ```
 
 npm Modules:
+
 In addition to core modules, developers can use external modules available through npm (Node Package Manager). npm is the largest package registry for JavaScript, and it allows you to easily install and manage third-party libraries.
 
 To use an npm module, you first install it using the npm command, and then you can include it in your code using require. For example:
@@ -170,9 +174,11 @@ const _ = require('lodash');
 ```
 
 Module Patterns:
+
 CommonJS Pattern:
 
 The CommonJS pattern is used for defining modules with module.exports and importing them with require. It is the standard module system in Node.js.
+
 ES6 Modules:
 
 With the introduction of ECMAScript 6 (ES6), JavaScript now supports native modules. However, Node.js continues to use CommonJS as the default, and ES6 modules are supported through the .mjs extension or the "type": "module" field in package.json.
@@ -233,6 +239,7 @@ server.listen(PORT, () => {
 ```
 
 Handling Requests:
+
 The callback function provided to createServer takes two arguments: req (the request object) and res (the response object). You can handle the incoming request and send a response accordingly.
 
 ```javascript
@@ -303,10 +310,14 @@ The http module in Node.js provides a foundation for building web servers and ma
 
 ________________________________________________________________________________________________________________________________
 **http method**
+
+
 HTTP (Hypertext Transfer Protocol) is a protocol used for communication between clients and servers over the internet. HTTP defines a set of methods (or verbs) that indicate the desired action to be performed on a resource. Each HTTP request from a client to a server includes a method, and the server responds accordingly. Here are some commonly used HTTP methods:
+
 1.	GET:
    
 •	The GET method is used to request data from a specified resource. It should only retrieve data and should not have any other effect on the data.
+
 3.	POST:
    
 •	The POST method is used to submit data to be processed to a specified resource. It's often used when uploading a file or submitting a form.
@@ -335,6 +346,7 @@ HTTP (Hypertext Transfer Protocol) is a protocol used for communication between 
 14.	TRACE:
 
 •	The TRACE method is used to perform a message loop-back test along the path to the target resource. It's not often used in practice and is mainly for diagnostic purposes.
+
 15.	CONNECT:
 
 •	The CONNECT method is used to establish a network connection to a resource, usually through a proxy. It's often used in the establishment of a TLS/SSL tunnel for secure communication.
