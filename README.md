@@ -2541,7 +2541,10 @@ In many modern web application architectures, there is a trend toward using ligh
 
 
  ___________________________________________________________________________________________________________________
+
+ 
 **JWT**
+
 
 JWT stands for JSON Web Token. It is a compact, URL-safe means of representing claims between two parties. JWTs are often used for authentication and authorization in web applications and APIs. The token is encoded as a JSON object, which is then base64Url encoded to form a string that can be easily passed between parties.
 
@@ -2645,6 +2648,8 @@ In this example, the jwt.sign function is used to create a JWT, and jwt.verify i
 
 
 ________________________________________________________________________________________________________________________________________________________
+
+
 **REST API features**
 
 
@@ -2709,6 +2714,7 @@ These features and principles collectively define the RESTful architecture and g
 
 
 _______________________________________________________________________________________________________________
+
 **Stub**
 
 
@@ -2727,6 +2733,7 @@ API stubs can be created manually or generated automatically based on API specif
 Code Stub:
 
 A "stub" can also refer to a placeholder or incomplete piece of code that serves as a temporary placeholder during development. It may be used to outline the structure of a function or class before the actual implementation is completed.
+
 Here's a simple example of a function stub in JavaScript:
 
 // Function stubIn various contexts, the term "stub" can refer to different things. Here are a couple of common meanings:
@@ -2735,6 +2742,7 @@ Here's a simple example of a function stub in JavaScript:
 
 
 ___________________________________________________________________________________________________________________
+
 **Package-lock.json**
 
 
@@ -2821,9 +2829,6 @@ app.listen(3000, () => {
 });
 ```
 
-
-
-
 Router:
 
 Express allows you to create modular routers that can be mounted in the main application. Routers help in organizing routes and handling specific sets of functionality.
@@ -2841,8 +2846,6 @@ app.listen(3000, () => {
   console.log('Server is running on http://localhost:3000');
 });
 ```
-
-
 
 
 Template Engines:
@@ -2893,6 +2896,7 @@ app.listen(3000, () => {
 Error Handling:
 
 Express provides a simple way to handle errors using middleware functions with four parameters (err, req, res, next).
+
 Example:
 
 ```javascript
