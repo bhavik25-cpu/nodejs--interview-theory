@@ -16,6 +16,7 @@ Node.js is an open source server environment
 Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute server-side JavaScript code. It is built on the V8 JavaScript engine, which is the same engine that powers the Google Chrome browser. Node.js enables the execution of JavaScript code outside of a web browser, making it suitable for server-side development.
 
      Here are some key characteristics and reasons why developers choose to use Node.js:
+     
 1.	JavaScript on the Server Side:
    
 •	Node.js allows developers to use JavaScript for both client-side and server-side development. This enables a more seamless transition between the frontend and backend 
