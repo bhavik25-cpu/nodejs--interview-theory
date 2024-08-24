@@ -4,6 +4,7 @@ https://github.com/Mohamed-Hashem/nodejs-interview-questions
 _______________________________________________________________________________________________________________________________
 
 https://www.youtube.com/watch?v=ohIAiuHMKMI&t=224s
+
 **What is node js and why should we use node js**
 
 Node.js is an open source server environment
@@ -54,6 +55,7 @@ Node.js is an open-source, cross-platform JavaScript runtime environment that al
 •	Node.js is versatile and can be used for a variety of applications, including web servers, APIs, real-time applications (e.g., chat applications, online gaming), and 
         microservices.
 ______________________________________________________________________________________________________________________________________________________________________________
+https://www.youtube.com/watch?v=y0aTs56DJWk&t=601s
 
 **How Node Js work**
 
