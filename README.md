@@ -114,6 +114,10 @@ This event-driven, non-blocking architecture makes Node.js particularly efficien
 
 _____________________________________________________________________________________________________________________________________________________________________________
 
+
+https://www.youtube.com/watch?v=FSRo41TaHFU&t=268s
+
+
 **Node.js Modules**
 
 In Node.js, modules are a fundamental concept that allows developers to organize code into reusable and maintainable units. A module in Node.js is a file containing JavaScript code that defines functions, objects, or variables that can be used in other files. Modules help in structuring applications, promoting code reusability, and avoiding naming conflicts.
@@ -125,7 +129,9 @@ Creating a Module:
 Exporting from a Module:
 
 To make functions, variables, or objects available outside a module, you use the module.exports or exports object.
+
 // Example module: myModule.js
+
 // Exporting a function
 ```javasctipt
 exports.myFunction = function() {
@@ -139,8 +145,11 @@ exports.myVariable = 'Hello from myVariable!';
 Importing a Module:
 
 In another file, you can import the module using the require function.
+
 // Example usage: app.js
+
 // Importing the module
+
 ```javascript
 
 const myModule = require('./myModule');
