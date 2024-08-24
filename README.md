@@ -1148,6 +1148,7 @@ console.log(relativePathWindows); // '..\\Bob' (on Windows)
 path.win32.basename(path, [ext]) and path.posix.basename(path, [ext]):
 
 Versions of path.basename that operate specifically on Windows (win32) or POSIX systems (posix).
+
 ```javascript
 
 const winBasename = path.win32.basename('C:\\Users\\John\\file.txt');
@@ -1158,6 +1159,8 @@ console.log(posixBasename); // 'file.txt' (on Unix-like systems)
 
 ```
 
+
+
 path.win32.sep and path.posix.sep:
 
 
@@ -1167,7 +1170,7 @@ Constants representing the platform-specific file path separator (\\ on Windows)
 console.log(path.win32.sep); // '\\' (on Windows)
 console.log(path.posix.sep); // '/' (on Unix-like systems)
 
-``
+```
 
 ___________________________________________________________________________________________________________________________________________________________________________
 **Node.js process**
