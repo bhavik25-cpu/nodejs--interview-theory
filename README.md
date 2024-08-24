@@ -2056,24 +2056,27 @@ HTTP
 If-None-Match: "abc123"
 Example Response (if resource hasn't changed):
 ```
+
 HTTP
 
-```javascript
 HTTP/1.1 304 Not Modified
 
 Proxy Caching:
 
 Intermediary proxies, such as reverse proxies or Content Delivery Networks (CDNs), can cache responses on behalf of clients.
+
 Proxies may use the same caching mechanisms, such as Cache-Control headers and ETag validation, to determine whether to serve cached content or request fresh content from the server.
 
 Content Delivery Networks (CDNs):
 
 CDNs are distributed networks of servers that cache and serve content from locations closer to the end-users.
+
 CDNs can significantly reduce latency and improve performance by delivering cached content from a server geographically closer to the client.
 
 Conditional Requests:
 
 Clients can make conditional requests using the If-Match, If-None-Match, If-Modified-Since, or If-Unmodified-Since headers to check whether a resource has changed since a specific condition.
+
 Example:
 
 HTTP
@@ -2088,14 +2091,8 @@ Example:
 HTTP
 
 Cache-Control: max-age=3600
+
 Implementing caching in RESTful APIs should consider the nature of the data, the expected frequency of updates, and the desired trade-off between data freshness and performance. Careful consideration is needed to handle cache invalidation, especially when dealing with frequently changing resources.
-
-
-
-
-
-
-
 
 
 
@@ -2156,6 +2153,7 @@ myEmitter.on('eventName', (arg1, arg2) => {
 ```
 
 EventEmitter provides additional methods for managing events and event listeners, such as once() to register a one-time event listener, removeListener() to remove event listeners, and setMaxListeners() to set the maximum number of listeners for a particular event.
+
 
 EventEmitter and events play a crucial role in building event-driven applications in Node.js. They enable asynchronous and non-blocking communication between different components of the application, allowing for efficient and scalable development
 
