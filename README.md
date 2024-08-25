@@ -1,5 +1,7 @@
 https://github.com/Mohamed-Hashem/nodejs-interview-questions
 
+https://www.youtube.com/watch?v=Nz-nPR5YJbw
+
 # nodejs--interview-theory
 _______________________________________________________________________________________________________________________________
 
@@ -116,7 +118,6 @@ ________________________________________________________________________________
 
 
 https://www.youtube.com/watch?v=FSRo41TaHFU&t=268s
-
 
 **Node.js Modules**
 
@@ -256,6 +257,7 @@ Handling Requests:
 The callback function provided to createServer takes two arguments: req (the request object) and res (the response object). You can handle the incoming request and send a response accordingly.
 
 ```javascript
+
 const server = http.createServer((req, res) => {
     // Handling the request
     res.writeHead(200, {'Content-Type': 'text/plain'});
@@ -289,6 +291,7 @@ Making HTTP Requests (Client):
 The http module can also be used to make HTTP requests from the client side.
 
 ```javascript
+
 const http = require('http');
 
 const options = {
@@ -315,6 +318,7 @@ req.on('error', (error) => {
 });
 
 req.end();
+
 ```
 
 This example demonstrates how to make a simple HTTP GET request to www.example.com.
@@ -322,6 +326,8 @@ This example demonstrates how to make a simple HTTP GET request to www.example.c
 The http module in Node.js provides a foundation for building web servers and making HTTP requests. For more complex scenarios, you might also consider using external packages like express for web application frameworks or axios for making HTTP requests with additional features.
 
 ________________________________________________________________________________________________________________________________
+
+
 **http method**
 
 
@@ -368,6 +374,8 @@ These HTTP methods define the actions that can be performed on resources identif
 
 
 ______________________________________________________________________________________________________________________________
+
+
 **Node.js File System Module** 
 
 The Node.js File System (fs) module provides an API for interacting with the file system. It allows you to perform various operations on files and directories, such as reading and writing files, creating and deleting directories, and more. Here's an overview of some commonly used functionalities provided by the fs module:
@@ -376,11 +384,13 @@ Importing the fs Module:
 
 To use the fs module, you need to include it in your Node.js script:
 ```javascript
+
 const fs = require('fs');
 ```
 Reading a File:
 
 The fs.readFile method is used to read the contents of a file asynchronously:
+
 ```javascript
 fs.readFile('example.txt', 'utf8', (err, data) => {
     if (err) {
@@ -389,6 +399,7 @@ fs.readFile('example.txt', 'utf8', (err, data) => {
     }
     console.log(data);
 });
+
 ```
 
 
@@ -397,6 +408,7 @@ Writing to a File:
 The fs.writeFile method is used to write data to a file asynchronously:
 
 ```javascript
+
 const content = 'This is the content to write to the file.';
 
 fs.writeFile('example.txt', content, 'utf8', (err) => {
@@ -416,6 +428,7 @@ If you want to perform file operations synchronously (blocking), you can use fs.
 
 
 ```javascript
+
 // Synchronous file reading
 const data = fs.readFileSync('example.txt', 'utf8');
 console.log(data);
@@ -424,6 +437,7 @@ console.log(data);
 const content = 'This is the content to write to the file.';
 fs.writeFileSync('example.txt', content, 'utf8');
 console.log('File has been written.');
+
 ```
 
 Checking if a File or Directory Exists:
@@ -442,6 +456,8 @@ Creating and Removing Directories:
 The fs.mkdir method is used to create a directory, and fs.rmdir is used to remove a directory:
 
 ```javascript
+
+
 // Creating a directory
 fs.mkdir('myDirectory', (err) => {
     if (err) {
@@ -466,6 +482,8 @@ Listing Files in a Directory:
 The fs.readdir method is used to get a list of files in a directory:
 
 ```javascript
+
+
 fs.readdir('.', (err, files) => {
     if (err) {
         console.error(err);
@@ -475,6 +493,8 @@ fs.readdir('.', (err, files) => {
 });
 
 ```
+
+
 These are just a few examples of what the Node.js File System module can do. The module provides various other methods for file and directory operations, such as renaming files, deleting files, checking file stats, and more. Always handle file operations carefully, especially when dealing with asynchronous methods, to avoid blocking the event loop and ensure proper error handling.
 
 _________________________________________________________________________________________________________________________________________________--
@@ -566,6 +586,7 @@ You can create your own EventEmitter instance by extending the EventEmitter clas
 class MyEmitter extends EventEmitter {}
 const myEmitter = new MyEmitter();
 ```
+
 Emitting Events:
 
 Use the emit method to trigger an event:
@@ -634,6 +655,9 @@ Node.js events are widely used for building event-driven applications, handling 
 
 
 ____________________________________________________________________________________________________________________________________________________
+
+https://www.youtube.com/watch?v=DX9UUr7YKxE&t=746s
+
 **Node.js Events method**
 
 
