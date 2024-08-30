@@ -3049,6 +3049,8 @@ Remember to check the documentation of the specific API you are working with for
 
 
 _______________________________________________________________________________________________________________________
+
+
 **Cors js**
 
 
@@ -3115,6 +3117,8 @@ Remember that CORS is a security feature, and you should configure it based on y
 
 
 _________________________________________________________________________________________________________________________________________________________
+
+
 **Export , Import and Module. Exports in Node Js explain to me with code example**
 
 
@@ -3345,11 +3349,15 @@ pool.query('SELECT * FROM mytable', (error, results, fields) => {
 By configuring the connection pool with the desired limit, you control the number of concurrent connections, preventing the application from overwhelming the database server.
 
 ____________________________________________________________________________________________________________________________________________________
+
+
 HTTP VS HTTPS
  
 ![image](https://github.com/user-attachments/assets/8c0b6a30-1c56-47b6-9910-27431969a16e)
 
 __________________________________________________________________________________________________________________________________________________
+
+
 **CORE MODULE IN NODE JS**
 
 
@@ -3503,6 +3511,8 @@ process.nextTick(() => {
 
 ```
 _______________________________________________________________________________________________________________________________________________
+
+
 **NODE JS LIBUV**
 
 
@@ -3592,6 +3602,8 @@ myEmitter.emit('myEvent', 'Hello, event-driven programming!');
 In this example, the program responds to the 'myEvent' event by printing a message to the console. The event emitter (myEmitter) handles the event and triggers the associated event handler.
 
 ______________________________________________________________________________________________________________________________________________
+
+
 **EventEmitter in node js**
 
 In Node.js, the EventEmitter class is a core module that facilitates the implementation of the observer pattern, allowing objects to emit and handle events. It is a fundamental part of Node.js's event-driven architecture. Here's an overview of how to use EventEmitter:
@@ -3758,6 +3770,8 @@ router.get('/about', (req, res) => {
 ```
 
 _________________________________________________________________________________________________
+
+
 **Routers in NodeJS**
 
 In Node.js, routers are components that help in organizing and handling different routes (URL paths) in an application. Routers are often used in conjunction with web frameworks like Express.js to modularize and structure the code in a more maintainable way. They allow you to group related routes and handlers together.
@@ -3847,6 +3861,8 @@ Note: The order of app.use() matters; middleware is executed in the order it's m
 
 
 __________________________________________________________________________________________________________________________________________
+
+
 **setTimeout,setimmediate,setintervel, cleartimeout,proccess.nexttick in node js**
 
 n Node.js, the functions setTimeout, setImmediate, setInterval, clearTimeout, and process.nextTick are used for handling asynchronous operations and scheduling code execution. Here's a brief overview of each:
@@ -4161,6 +4177,8 @@ Remember that the order in which middleware is defined matters, as they are exec
 
 
 ___________________________________________________________________________________________________________________________________________________
+
+
 **Pros and Cons of Using Node.js**
 
 Pros of Node.js
@@ -4263,6 +4281,8 @@ Node.js provides a rich set of built-in modules that you can use to perform vari
 
 
 ______________________________________________________________________________________________________________________________________________
+
+
 **ssh and ssl diff**
 
 SSH (Secure Shell) and SSL (Secure Sockets Layer) are both cryptographic protocols designed to secure communication over networks, but they serve different purposes and operate at different layers of the network stack.
@@ -4331,6 +4351,8 @@ In summary, SSH is primarily used for secure remote access and file transfer, wh
 
 
 _____________________________________________________________________________________
+
+
 **Microservices**
 
 Microservices is an architectural style that structures an application as a collection of small, independently deployable services, each running in its own process and communicating with lightweight mechanisms, often an HTTP-based application programming interface (API). Each microservice is designed to perform a specific business function and can be developed, deployed, and scaled independently of other services.
@@ -4422,6 +4444,9 @@ Microservices can be implemented in Node.js, leveraging its asynchronous, event-
 
 
 _________________________________________________________________________________________________________________________________
+
+https://www.youtube.com/watch?v=Enmz4h4S_nA&t=185s
+
 **Different between Axios and fetch**
 
 Axios and the fetch API are both popular methods for making HTTP requests in JavaScript applications, but they have some differences in terms of features, ease of use, and browser compatibility:
