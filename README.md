@@ -3862,6 +3862,7 @@ Note: The order of app.use() matters; middleware is executed in the order it's m
 
 __________________________________________________________________________________________________________________________________________
 
+https://www.youtube.com/watch?v=NvXOWz0OV6Y
 
 **setTimeout,setimmediate,setintervel, cleartimeout,proccess.nexttick in node js**
 
@@ -4082,6 +4083,10 @@ v13.14.0	-	2020-04-29	v6.14.4	ReleasesChangelogDocs
 
 ________________________________________________________________________________________________________________________________________________________________________
 
+https://www.youtube.com/watch?v=r886nEjeWuU
+
+https://www.youtube.com/watch?v=kNCakQ71aus
+
 **Middleware Types**
 
 In the context of web development and frameworks like Express.js (commonly used with Node.js), middleware plays a crucial role in processing incoming HTTP requests. Middleware functions are functions that have access to the request object (req), the response object (res), and the next function in the application’s request-response cycle. They can modify the request and response objects, end the request-response cycle, or call the next middleware function in the stack.
@@ -4178,6 +4183,8 @@ Remember that the order in which middleware is defined matters, as they are exec
 
 ___________________________________________________________________________________________________________________________________________________
 
+https://www.youtube.com/watch?v=2gQG4cFjahw
+
 
 **Pros and Cons of Using Node.js**
 
@@ -4198,6 +4205,8 @@ Node.js can be customized and further extended as per the requirements as it off
 Easy Scalability
 
 Node.js services a non-blocking event-loop mechanism that offers high scalability and enables the server to process requests effortlessly. It simplifies load balancing over multiple CPU cores, and without burning out the RAM process. It also makes easy delivery of desired outcomes through smaller modules and offers a better option than other JavaScript servers.
+
+
 Cons of Node.js 
 
 API Instability
@@ -4245,7 +4254,7 @@ Node.js provides a rich set of built-in modules that you can use to perform vari
 
 11.	os:
 
-•	The os module provides operating system-related utility methods. You can retrieve information about the system, such as CPU architecture, memory, and network interfaces.
+•	The os module provides operating system-relate d utility methods. You can retrieve information about the system, such as CPU architecture, memory, and network interfaces.
 
 12.	stream:
 
@@ -4282,6 +4291,9 @@ Node.js provides a rich set of built-in modules that you can use to perform vari
 
 ______________________________________________________________________________________________________________________________________________
 
+https://www.youtube.com/watch?v=0yw-z6f7Mb4
+
+https://www.youtube.com/watch?v=Atbl7D_yPug
 
 **ssh and ssl diff**
 
@@ -4353,6 +4365,7 @@ In summary, SSH is primarily used for secure remote access and file transfer, wh
 _____________________________________________________________________________________
 
 https://www.youtube.com/watch?v=7IFJb-uLEaI
+https://www.youtube.com/watch?v=Atbl7D_yPug
 
 
 **Microservices**
