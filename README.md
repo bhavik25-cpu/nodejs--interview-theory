@@ -3447,7 +3447,7 @@ const http = require('http');
 These modules are part of the Node.js standard library and provide fundamental functionality for building various types of applications.
 
 
-_________________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________________
 
 
 **In Node.js, setImmediate, setTimeout, setInterval, clearInterval, and process.nextTick are functions that are used for scheduling and handling asynchronous operations. Here's a brief explanation of each:**
@@ -3474,8 +3474,6 @@ setTimeout(() => {
 }, 1000);
 ```
 
-
-
 setInterval(callback, interval, args):
 
 setInterval is used to repeatedly execute a callback function with a fixed time delay between each execution.
@@ -3484,6 +3482,8 @@ setInterval is used to repeatedly execute a callback function with a fixed time 
 const intervalId = setInterval(() => {
   console.log('This will be executed every 2000 milliseconds (2 seconds).');
 }, 2000);
+
+
 clearInterval(intervalId):
 ```
 
@@ -3739,9 +3739,13 @@ app.listen(port, () => {
 In this example:
 
 We create an Express app and a router using express.Router().
+
 We define route handlers for different paths ("/" and "/about") on the router.
+
 We use app.use('/pages', router) to tell Express to use the router for all paths that start with "/pages".
+
 The server listens on a specified port.
+
 Now, when you visit "http://localhost:3000/pages/", it will trigger the handler for the root path ("/") defined in the router, and "http://localhost:3000/pages/about" will trigger the handler for the "/about" path.
 
 
