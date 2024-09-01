@@ -3809,9 +3809,13 @@ app.listen(port, () => {
 In this example:
 
 We create an Express app and a router using express.Router().
+
 We define route handlers for different paths ("/" and "/about") on the router.
+
 We use app.use('/pages', router) to tell Express to use the router for all paths that start with "/pages".
+
 The server listens on a specified port.
+
 Now, when you visit "http://localhost:3000/pages/", it will trigger the handler for the root path ("/") defined in the router, and "http://localhost:3000/pages/about" will trigger the handler for the "/about" path.
 
 
@@ -3871,7 +3875,9 @@ n Node.js, the functions setTimeout, setImmediate, setInterval, clearTimeout, an
 setTimeout:
 
 setTimeout is used to schedule a function to be executed after a specified amount of time (in milliseconds).
+
 It returns a timeout object that can be used with clearTimeout to cancel the scheduled function.
+
 ```javascript
 
 const timeoutId = setTimeout(() => {
@@ -3939,7 +3945,7 @@ process.nextTick(() => {
 
 ```
 
-
+_____________________________________________________________________________________________________________________________________________________________________
 Promise.all()
 
 Promise.all() is a method in JavaScript (including Node.js) that takes an array of promises as input and returns a new promise. This new promise will be fulfilled with an array of resolved values from the input promises, in the same order as the input array. If any of the input promises is rejected, the returned promise will be rejected with the reason of the first promise that was rejected.
