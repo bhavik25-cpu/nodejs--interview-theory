@@ -3703,52 +3703,6 @@ Microtasks:
 
 Node.js also has a concept of microtasks, which are executed during specific phases of the event loop. Promises and process.nextTick are examples of mechanisms that schedule microtasks. Microtasks are executed before moving to the next phase of the event loop.
 
-Routers in NodeJS
-
-In Node.js, routers are components that help in organizing and handling different routes (URL paths) in an application. Routers are often used in conjunction with web frameworks like Express.js to modularize and structure the code in a more maintainable way. They allow you to group related routes and handlers together.
-
-Here's a simple example of how routers can be implemented using Express.js, one of the most popular web frameworks for Node.js:
-```javascript
-
-const express = require('express');
-const app = express();
-const port = 3000;
-
-// Define a router
-const router = express.Router();
-
-// Define route handlers
-router.get('/', (req, res) => {
-    res.send('Home Page');
-});
-
-router.get('/about', (req, res) => {
-    res.send('About Page');
-});
-
-// Use the router in the main app
-app.use('/pages', router);
-
-// Start the server
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
-
-```
-
-In this example:
-
-We create an Express app and a router using express.Router().
-
-We define route handlers for different paths ("/" and "/about") on the router.
-
-We use app.use('/pages', router) to tell Express to use the router for all paths that start with "/pages".
-
-The server listens on a specified port.
-
-Now, when you visit "http://localhost:3000/pages/", it will trigger the handler for the root path ("/") defined in the router, and "http://localhost:3000/pages/about" will trigger the handler for the "/about" path.
-
-
 In Node.js, routers are components that help in organizing and handling different routes (URL paths) in an application. Routers are often used in conjunction with web frameworks like Express.js to modularize and structure the code in a more maintainable way. They allow you to group related routes and handlers together.
 
 Here's a simple example of how routers can be implemented using Express.js, one of the most popular web frameworks for Node.js:
@@ -3823,7 +3777,11 @@ The server listens on a specified port.
 Now, when you visit "http://localhost:3000/pages/", it will trigger the handler for the root path ("/") defined in the router, and "http://localhost:3000/pages/about" will trigger the handler for the "/about" path.
 
 
-app.use() in node js
+
+___________________________________________________________________________________________________________________________________________________________
+
+
+**app.use() in node js**
 
 In Node.js, app.use() is a method provided by web frameworks, most commonly used with Express.js, to mount middleware functions on the specified path. Middleware functions in Express are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle.
 
