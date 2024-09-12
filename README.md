@@ -875,6 +875,7 @@ console.log(myGlobalVariable); // 'Hello, Global!'
 While it's possible to use global for global variables, it's generally recommended to avoid polluting the global namespace.
 
 process:
+
 The process object provides information and control over the current Node.js process. It includes properties such as process.env (environment variables), process.argv (command-line arguments), and 
 
 ```javascript
@@ -995,8 +996,11 @@ console.log(globalThis === global); // true
 ```
 These additional global objects and concepts are commonly used in Node.js applications for various tasks such as scheduling operations, working with asynchronous code, and accessing information about the current module or file. Understanding these objects and their usage is important for efficient Node.js development.
 
+______________________________________________________________________________________________________________________________________________________
 
-Node.js path
+
+**Node.js path**
+
 The path module in Node.js provides utilities for working with file and directory paths. It helps in handling and manipulating file paths in a platform-independent way. The path module is part of the core Node.js modules, so you don't need to install it separately.
 
 Here are some commonly used functions from the path module:
@@ -1210,6 +1214,8 @@ console.log(path.posix.sep); // '/' (on Unix-like systems)
 ```
 
 ___________________________________________________________________________________________________________________________________________________________________________
+
+
 **Node.js process**
 
 
@@ -1497,6 +1503,8 @@ Remember to use these functions judiciously, as excessive use of process.nextTic
 
 
 _________________________________________________________________________________________________________________________________
+
+
 **What is loadbalancer**
 
 
@@ -1520,6 +1528,8 @@ Load balancing helps ensure high availability, scalability, and reliability of a
 
 
 ________________________________________________________________________________________________________________________________________________
+
+
 **agile methodology**
 
  
@@ -1543,6 +1553,7 @@ Agile Principles:
     
 •	Embracing changes in requirements and adapting to them throughout the development process.
 
+
 Scrum Framework:
 
 1.	Roles:
@@ -1552,6 +1563,7 @@ Scrum Framework:
 •	Scrum Master: Facilitates the Scrum process, removes obstacles, and ensures the team adheres to Scrum principles.
 
 •	Development Team: Cross-functional team responsible for delivering a potentially shippable product increment.
+
 
 3.	Events:
 
@@ -1565,6 +1577,7 @@ Scrum Framework:
 •	Sprint Review: A meeting at the end of the sprint to review and demonstrate the completed work to stakeholders.
 
 •	Sprint Retrospective: A reflection on the sprint to identify what went well and areas for improvement.
+
 
 5.	Artifacts:
    
@@ -1613,7 +1626,10 @@ Agile emphasizes adaptability, collaboration, and continuous improvement, allowi
 
 
 ______________________________________________________________________________________________________________
-**Mvc**
+
+
+**Mvc
+
 
 
 MVC stands for Model-View-Controller, which is a design pattern commonly used in software development, particularly in the context of building user interfaces for applications. The MVC pattern separates an application into three interconnected components, each with its own distinct responsibilities:
@@ -1635,7 +1651,7 @@ MVC stands for Model-View-Controller, which is a design pattern commonly used in
 •	Listens for user input and communicates user actions to the Controller.
 
 5.	Controller:
-6.	
+
 •	Acts as an intermediary between the Model and the View.
 
 •	Handles user input and updates the Model accordingly.
@@ -1756,6 +1772,8 @@ The choice of an SDLC model depends on factors such as project requirements, com
 
 
 ______________________________________________________________________________________________________________________
+
+
 **Single-threaded**
 
 
@@ -1795,6 +1813,8 @@ The single-threaded, event-driven architecture of Node.js is designed to provide
 
 
 _________________________________________________________________________________________________
+
+
 **how can handle Concurrency **
 
 
@@ -1974,6 +1994,8 @@ It's important to note that while clustering can improve concurrency and perform
 
 
 ________________________________________________________________________________________________________________
+
+
 **Event loop**
 
 
@@ -2022,6 +2044,8 @@ Authentication and Authorization
 
 
 _______________________________________________________________________________________________________________________________________________
+
+
 **Rest ,Restfull and Rest Api**
 
 REST, RESTful, and REST API are terms commonly used in the context of web services and APIs. Let's clarify each of these concepts:
@@ -2137,6 +2161,10 @@ Implementing caching in RESTful APIs should consider the nature of the data, the
 
 
 __________________________________________________________________________________________________________________________
+
+
+https://www.youtube.com/watch?v=7QBb6n-Wj3A&t=10s
+
 **event and EventEmitter in node js**
 
 
@@ -2198,6 +2226,7 @@ EventEmitter provides additional methods for managing events and event listeners
 EventEmitter and events play a crucial role in building event-driven applications in Node.js. They enable asynchronous and non-blocking communication between different components of the application, allowing for efficient and scalable development
 
 ________________________________________________________________________________________
+
 **event-driven**
 
 
@@ -2254,6 +2283,8 @@ In this example, the callback function is executed when the button is clicked, d
 
 
 ____________________________________________________________________________________________________________________
+
+
 **WEBPACK**
 
 Webpack is a popular open-source JavaScript module bundler that helps developers manage and organize the assets and dependencies in a web project. It takes various assets, such as JavaScript files, stylesheets, and images, and transforms them into a bundled output that is optimized for web deployment.
@@ -2369,6 +2400,8 @@ module.exports = {
 Webpack has become a standard tool in modern web development for managing dependencies, optimizing assets, and providing a smooth development workflow. It simplifies the process of building and maintaining complex web applications.
 
 _______________________________________________________________________________________________
+
+
  **package.json**
  
 The package.json file is a crucial configuration file in Node.js projects. It is used to specify metadata about the project and manage project dependencies, scripts, and other settings. Here are some key sections and properties commonly found in a package.json file:
@@ -3264,7 +3297,7 @@ Optimizing the performance of a Node.js application involves various aspects, fr
 •	Use connection pooling to manage database connections efficiently.
 
 15.	Compression:
-16.	
+
 •	Enable compression for HTTP responses using tools like Gzip. This reduces the size of data sent over the network.
 
 18.	Logging and Debugging:
@@ -3295,6 +3328,8 @@ Remember that performance optimization is an ongoing process, and it's crucial t
 
 
 __________________________________________________________________________________________________________________________
+
+
 **What is connection pulling**
 
 It appears there is a small typo in your question. I assume you meant "connection pooling." Connection pooling is a technique used in software applications, including those built with Node.js, to efficiently manage and reuse database connections.
@@ -3512,6 +3547,8 @@ process.nextTick(() => {
 ```
 _______________________________________________________________________________________________________________________________________________
 
+https://www.youtube.com/watch?v=4ncw9kDkK1k&t=37s
+
 
 **NODE JS LIBUV**
 
@@ -3602,6 +3639,8 @@ myEmitter.emit('myEvent', 'Hello, event-driven programming!');
 In this example, the program responds to the 'myEvent' event by printing a message to the console. The event emitter (myEmitter) handles the event and triggers the associated event handler.
 
 ______________________________________________________________________________________________________________________________________________
+
+https://www.youtube.com/watch?v=7QBb6n-Wj3A&t=10s
 
 
 **EventEmitter in node js**
