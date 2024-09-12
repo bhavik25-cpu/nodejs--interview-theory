@@ -375,6 +375,9 @@ These HTTP methods define the actions that can be performed on resources identif
 
 ______________________________________________________________________________________________________________________________
 
+https://www.youtube.com/watch?v=YazJFb_i4A0
+
+https://www.youtube.com/watch?v=Z_p1yFGS0Ak
 
 **Node.js File System Module** 
 
@@ -658,15 +661,12 @@ ________________________________________________________________________________
 
 https://www.youtube.com/watch?v=DX9UUr7YKxE&t=746s
 
-**Node.js Events method**
+**Node.js Events method** 
 
 
 In Node.js, the events module provides the EventEmitter class, which allows you to work with events in a flexible and powerful way. The EventEmitter class comes with several methods for working with events. Here are some of the key methods:
 
-```javascript
 on(event, listener) or addListener(event, listener):
-```
-
 
 This method is used to register a listener function for a particular event. The event will trigger the execution of the listener when emitted.
 
@@ -679,8 +679,9 @@ myEmitter.on('myEvent', (arg1, arg2) => {
 });
 
 myEmitter.emit('myEvent', 'Hello', 'World');
-once(event, listener):
+
 ```
+once(event, listener):
 
 Similar to on, this method registers a listener, but the listener will be invoked only once for the specified event. After it is called, it is automatically removed.
 ```javascript
@@ -690,9 +691,9 @@ myEmitter.once('myEvent', (arg1, arg2) => {
 
 myEmitter.emit('myEvent', 'Hello', 'World');
 myEmitter.emit('myEvent', 'Another', 'Event');  // This won't trigger the listener again
-emit(event, [arg1], [arg2], [...]):
-```
 
+```
+emit(event, [arg1], [arg2], [...]):
 
 This method is used to emit an event, triggering the execution of all registered listeners for that event. Additional arguments can be passed to the listeners.
 
@@ -808,6 +809,8 @@ These methods, when used together, provide a powerful and flexible mechanism for
 
 ______________________________________________________________________________________________________________________
 
+https://www.youtube.com/watch?v=OWoHVv16ThY
+
 **Node.js REPL (READ, EVAL, PRINT, LOOP)**
 
 
@@ -870,8 +873,13 @@ Node.js provides several global objects that are available in every module and c
 global:
 
 The global object represents the global namespace in Node.js. Variables and functions declared in the global scope become properties and methods of the global object. However, it's important to note that unlike in browsers, not all global objects are properties of the global object in Node.js.
+
+```javascript
+
 global.myGlobalVariable = 'Hello, Global!';
 console.log(myGlobalVariable); // 'Hello, Global!'
+```
+
 While it's possible to use global for global variables, it's generally recommended to avoid polluting the global namespace.
 
 process:
@@ -931,6 +939,7 @@ Certainly! Here are a few more important global objects and concepts in Node.js:
 __filename and __dirname:
 
 __filename represents the absolute path of the current module's file, and __dirname represents the absolute path of the directory containing the current module. These variables are available globally in every module.
+
 ```javascript
 console.log(__filename); // Absolute path of the current module's file
 console.log(__dirname); // Absolute path of the directory containing the current module
