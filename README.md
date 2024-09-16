@@ -57,6 +57,12 @@ Node.js is an open-source, cross-platform JavaScript runtime environment that al
 •	Node.js is versatile and can be used for a variety of applications, including web servers, APIs, real-time applications (e.g., chat applications, online gaming), and 
         microservices.
 ______________________________________________________________________________________________________________________________________________________________________________
+
+why node js single thread
+
+https://www.youtube.com/shorts/jf7RxWh42LQ
+
+______________________________________________________________
 https://www.youtube.com/watch?v=y0aTs56DJWk&t=601s
 
 **How Node Js work**
