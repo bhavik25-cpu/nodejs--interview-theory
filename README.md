@@ -1953,6 +1953,9 @@ Choosing the appropriate strategy depends on the specific requirements of your a
 
 
 _________________________________________________________________________________________________________________________________________________________
+
+https://www.youtube.com/watch?v=JoPZ9gEvpz8&t=654s
+
 **Clustering**
 
 
