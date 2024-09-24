@@ -2754,7 +2754,7 @@ REST (Representational State Transfer) is an architectural style for designing n
 •	The uniform interface is a key principle of REST, providing a consistent way to interact with resources. It consists of the following constraints:
 
 •	Resource Identification: Resources (entities or data) are identified by URIs (Uniform Resource Identifiers).
-
+ 
 •	Resource Manipulation through Representations: Clients interact with resources through representations (e.g., JSON or XML). The representation contains the current state of the resource.
 
 •	Self-Descriptive Messages: Each message from the server to the client includes information on how to process the message. This can include the media type (e.g., JSON) and available actions.
@@ -2804,6 +2804,10 @@ These features and principles collectively define the RESTful architecture and g
 
 
 _______________________________________________________________________________________________________________
+
+https://www.youtube.com/watch?v=Ow-pCJ8LbKw
+
+https://www.youtube.com/watch?v=1ewqa5iX3Zc
 
 **Stub**
 
