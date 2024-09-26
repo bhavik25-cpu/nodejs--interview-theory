@@ -4526,11 +4526,14 @@ Axios and the fetch API are both popular methods for making HTTP requests in Jav
 
 __________________________________________________
 
+https://www.youtube.com/shorts/QUnEtZPRZuc
+
 https://www.youtube.com/watch?v=bbmFvCbVDqo
 
 Child Process
 
 In Node.js, the child_process module allows you to create and control child processes, enabling you to execute external commands or run other scripts concurrently. This is useful for performing tasks like CPU-intensive operations, running shell commands, or handling multiple tasks concurrently without blocking the main event loop.
+
 **spawn and fork in node js**
 
 
@@ -4565,8 +4568,11 @@ ls.on('close', (code) => {
 2. fork:
    
 Purpose: Specifically designed to spawn new Node.js processes that execute a module. It's optimized for running Node.js scripts.
+
 Usage: Useful when you want to run a child Node.js script and communicate with the parent process using a built-in message-passing system.
+
 I/O Streams: Limited compared to spawn, but it has an easy-to-use message-passing mechanism for exchanging data between parent and child processes.
+
 Example using fork:
 
 Let's assume you have two files, parent.js and child.js.
