@@ -4524,3 +4524,85 @@ Axios and the fetch API are both popular methods for making HTTP requests in Jav
 •	Fetch: The fetch API is built into modern web browsers and does not require additional dependencies. However, if you need to support older browsers, you may need to include a polyfill or use a transpiler like Babel, which can increase the overall size of your codebase.
 
 
+__________________________________________________
+
+https://www.youtube.com/watch?v=bbmFvCbVDqo
+
+Child Process
+
+In Node.js, the child_process module allows you to create and control child processes, enabling you to execute external commands or run other scripts concurrently. This is useful for performing tasks like CPU-intensive operations, running shell commands, or handling multiple tasks concurrently without blocking the main event loop.
+**spawn and fork in node js**
+
+
+In Node.js, spawn and fork are two ways to create child processes to handle concurrent tasks, enabling you to execute different operations simultaneously. They are part of the child_process module, but they serve different purposes.
+
+1. spawn:
+
+Purpose: Used to launch a new process with a specific command.
+
+Usage: Primarily for running system commands or external applications, passing arguments, and handling I/O streams.
+I/O Streams: It provides direct access to the child process's stdout, stderr, and stdin, making it more suitable for handling large amounts of data efficiently (stream-based).
+Example using spawn:
+```
+const { spawn } = require('child_process');
+
+// Example: Running the `ls` command on Unix or `dir` on Windows
+const ls = spawn('ls', ['-lh', '/usr']); // Replace 'ls' with 'dir' for Windows
+
+ls.stdout.on('data', (data) => {
+  console.log(`Output: ${data}`);
+});
+
+ls.stderr.on('data', (data) => {
+  console.error(`Error: ${data}`);
+});
+
+ls.on('close', (code) => {
+  console.log(`Process exited with code: ${code}`);
+});
+
+```
+2. fork:
+   
+Purpose: Specifically designed to spawn new Node.js processes that execute a module. It's optimized for running Node.js scripts.
+Usage: Useful when you want to run a child Node.js script and communicate with the parent process using a built-in message-passing system.
+I/O Streams: Limited compared to spawn, but it has an easy-to-use message-passing mechanism for exchanging data between parent and child processes.
+Example using fork:
+
+Let's assume you have two files, parent.js and child.js.
+
+parent.js:
+```javascript
+const { fork } = require('child_process');
+
+// Fork a new child process for `child.js`
+const child = fork('./child.js');
+
+// Send a message to the child process
+child.send('Hello, child process');
+
+// Listen for messages from the child
+child.on('message', (message) => {
+  console.log(`Message from child: ${message}`);
+});
+child.js:
+
+// Listen for messages from the parent
+process.on('message', (message) => {
+  console.log(`Message from parent: ${message}`);
+  
+  // Respond to the parent
+  process.send('Hello, parent process');
+});
+```
+
+Key Differences:
+Feature 	                                                     spawn	                                                                              fork
+
+Purpose	                                                   Runs any system command or external app                                   Executes another Node.js script
+
+I/O Handling 	                                              Provides stdout, stderr streams	                                        Uses message-passing system
+
+Use case	                                                   Large amounts of I/O, running system apps	                  Running Node.js modules, inter-process communication
+
+Memory	                                                  Better for handling streams of data	                        Efficient for JSON/message-passing
