@@ -56,11 +56,41 @@ Node.js is an open-source, cross-platform JavaScript runtime environment that al
 
 •	Node.js is versatile and can be used for a variety of applications, including web servers, APIs, real-time applications (e.g., chat applications, online gaming), and 
         microservices.
-______________________________________________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________
 
-why node js single thread
+**why node js single thread**
 
 https://www.youtube.com/shorts/jf7RxWh42LQ
+
+
+________________________________________________
+
+
+**how to achiave multi thread in node js**
+
+To achieve multi-threading in Node.js, you can use the worker_threads module. This allows you to run JavaScript code in parallel on multiple threads, utilizing multi-core processors for better performance.
+
+Here’s a basic example to get you started:
+
+Main Thread:
+
+```javasctipt
+
+const { Worker } = require('worker_threads');
+
+for (let i = 0; i < 4; i++) { // Create 4 worker threads
+  new Worker('./worker.js'); // Assume worker.js contains the worker thread logic
+}
+```
+
+Worker Thread (worker.js):
+```javasctipt
+
+console.log(`Worker started with thread id: ${require('worker_threads').threadId}`);
+```
+
+Each worker runs independently, allowing you to parallelize tasks and make the most out of multi-core processors. Perfect for enhancing performance in your Node.js applications!
+
 
 ______________________________________________________________
 https://www.youtube.com/watch?v=y0aTs56DJWk&t=601s
@@ -128,8 +158,32 @@ ________________________________________________________________________________
 
 JavaScript is inherently synchronous and single-threaded, executing code line by line in sequence. This means each operation waits for the previous one to complete before moving on to the next. However, JavaScript uses an event-driven, non-blocking model to handle asynchronous operations like I/O tasks, network requests, and timers. This allows it to perform tasks without blocking the main thread, keeping applications responsive.
 
+Sure! Here's an example of synchronous code in JavaScript. This code executes line by line in sequence, without any asynchronous operations:
+
+```javasctipt
+
+function add(a, b) {
+  return a + b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+const result1 = add(5, 3);
+console.log('Addition Result:', result1); // Output: Addition Result: 8
+
+const result2 = multiply(4, 2);
+console.log('Multiplication Result:', result2); // Output: Multiplication Result: 8
+
+```
+
+In this code, the add and multiply functions are executed one after the other, and the results are logged to the console. There's no waiting or delay, making it purely synchronous. 🚀✨
+
 
 ___________________________________________________________________________________
+
+
 asynchronous js
 
 
