@@ -4532,9 +4532,31 @@ In Node.js, there are several ways to create processes that can run concurrently
 
 Child Process: The child_process module provides the ability to spawn new processes and communicate with them using standard input/output streams. A child process runs independently of the parent process and can be used to execute external commands or other Node.js scripts. Child processes can be used to perform background tasks or to split a single process into multiple, more manageable parts.
 
+Purpose: Used to execute external applications or scripts, enabling concurrent operations.
+
+Execution: Each child process runs in its own memory space.
+
+Communication: Communicates with the parent process using inter-process communication (IPC) channels.
+
+
+
 Workers: Worker_threads module allows you to run JavaScript files or modules in a separate thread, using the SharedArrayBuffer and Atomics API to share memory between threads. A worker runs in the same process as the parent, but in a different thread, allowing to use multiple CPU cores.
 
+Purpose: Used for running JavaScript code in parallel threads, leveraging multi-core processors.
+
+Execution: Each worker runs in its own thread but shares memory with the parent thread.
+
+Communication: Communicates with the main thread using postMessage and onmessage events.
+
 Cluster: The cluster module allows you to create a cluster of worker processes that share the same port, allowing your application to take full advantage of multiple cores and improve performance. Each worker process runs in a separate process and can be used to handle different requests. The cluster module provides an easy way to create and manage worker
+
+
+Purpose: Used to scale Node.js applications across multiple CPU cores by forking the process.
+
+Execution: Each cluster is a separate Node.js process (similar to child processes) but shares the same server port.
+
+Communication: Communicates with the master process using IPC.
+
 
  processes, and it also provides a way to share the same state between the workers and the master.
 In summary, child_process allows you to spawn new processes and communicate with them, worker_threads allows you to run JavaScript files or modules in a separate thread, and cluster allows you to create a cluster of worker processes that share the same port.
