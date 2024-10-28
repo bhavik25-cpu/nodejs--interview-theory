@@ -62,7 +62,9 @@ ________________________________________________________________________________
 
 https://www.youtube.com/shorts/jf7RxWh42LQ
 
+Node.js is single-threaded because it uses an event-driven, non-blocking I/O model designed to handle many concurrent operations efficiently. This single-threaded approach simplifies the development of scalable applications by avoiding the complexities of multi-threading, such as deadlocks and race conditions.
 
+Instead of blocking the main thread while waiting for I/O operations to complete, Node.js uses an event loop and asynchronous callbacks to handle these operations. This allows it to manage thousands of concurrent connections efficiently, making it ideal for real-time applications and APIs.
 ________________________________________________
 
 **Node.js Architecture: A Deep Dive**
