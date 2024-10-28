@@ -72,6 +72,28 @@ ________________________________________________
 
 https://medium.com/@ibrahimlanre1890/node-js-architecture-understanding-node-js-architecture-5fb32879b994
 
+
+
+Node.js architecture is built on an event-driven, non-blocking I/O model designed for scalability and efficiency. Here’s a breakdown of its key components:
+
+Single-Threaded Event Loop: The heart of Node.js, it processes multiple concurrent operations without multiple threads. This loop continuously checks for and processes tasks in the event queue.
+
+Event Queue: Asynchronous operations (like I/O tasks, timers, network requests) are placed here to be handled by the event loop.
+
+Libuv: A C library that provides the event loop and handles asynchronous I/O operations. It delegates tasks to the appropriate resources and manages the event loop.
+
+V8 Engine: The JavaScript engine developed by Google, which Node.js uses to execute JavaScript code. It compiles JavaScript to native machine code for high performance.
+
+Node.js APIs: High-level APIs built on top of the libuv library, providing easy access to asynchronous I/O operations.
+
+Worker Threads: An optional module allowing multi-threading for CPU-intensive tasks without blocking the main event loop.
+
+This architecture makes Node.js ideal for building scalable, high-performance applications, especially for I/O-heavy tasks like web servers and real-time applications.
+
+
+
+
+
 Node.js, a powerful JavaScript runtime environment, is built on a unique architecture that enables efficient handling of concurrent requests. Let's break down the key components:
 
 Event-Driven Architecture
