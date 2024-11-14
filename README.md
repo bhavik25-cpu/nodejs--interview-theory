@@ -99,11 +99,14 @@ Node.js, a powerful JavaScript runtime environment, is built on a unique archite
 Event-Driven Architecture
 
 Event Loop: The heart of Node.js, it continuously monitors a queue of events and executes callbacks associated with those events.
+
 Non-Blocking I/O: Node.js uses asynchronous I/O operations, meaning it doesn't wait for I/O operations to complete before moving on to the next task. This allows it to handle many concurrent requests efficiently.
+
 Callback Functions: These functions are executed when a specific event occurs, such as a file read, network request, or user input.
 Single-Threaded, Multi-Tasked
 
 Single Thread: Node.js employs a single thread of execution, simplifying the programming model.
+
 Multiple Tasks: It can handle multiple tasks concurrently due to its non-blocking I/O and event-driven nature.
 
 V8 JavaScript Engine
